@@ -7,9 +7,8 @@ ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be 
   -   TERRAFORM_TERRASCAN
 
 TERRAFORM_TERRASCAN_ARGUMENTS:
-  - "-t"
-  - "aws"
   - "-l"
   - "debug"
+  - "--non-recursive"
 
 LOG_LEVEL: DEBUG
