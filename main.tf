@@ -27,5 +27,5 @@ provider "aws" {
 }
 
 module "ec2_instance" {
-    source = "git@github.com:NTitmus/terrascan2.git"
+    source = "github.com:NTitmus/terrascan2"
 }
