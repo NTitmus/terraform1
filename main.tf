@@ -26,14 +26,6 @@ provider "aws" {
   region  = "eu-west-2"
 }
 
-resource "aws_instance" "example" {
-  instance_type          = "t2.micro"
-  ami                    = "ami-0cfd0973db26b893b"
-  monitoring             = true
-
-  metadata_options {
-    http_endpoint = "enabled"
-    http_tokens   = "required"
-  }
-
+module "ec2_instance" {
+    source = "git@github.com:NTitmus/terrascan2.git"
 }
