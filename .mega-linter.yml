@@ -13,4 +13,8 @@ TERRAFORM_TERRASCAN_ARGUMENTS:
   - "debug"
   - "--non-recursive"
 
+TERRAFORM_TFLINT_PRE_COMMANDS:
+  - command: "terraform init"
+
 LOG_LEVEL: DEBUG
+
