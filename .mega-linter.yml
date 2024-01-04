@@ -6,12 +6,12 @@ APPLY_FIXES: none
 ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be disabled by default
   - TERRAFORM_TFLINT  
   - TERRAFORM_TERRASCAN
-  - TERRAFORM_TERRAFORM_FMT
+  #- TERRAFORM_TERRAFORM_FMT
 
 TERRAFORM_TERRASCAN_ARGUMENTS:
   - "-l"
   - "debug"
-  - "--non-recursive"
+  #- "--non-recursive"
 
 TERRAFORM_TFLINT_PRE_COMMANDS:
   - command: "git config --global url.\"https://oauth2:${{ secrets.GITHUB_TOKEN }}@github.com\".insteadOf https://github.com"
