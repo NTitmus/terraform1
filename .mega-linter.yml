@@ -14,6 +14,7 @@ TERRAFORM_TERRASCAN_ARGUMENTS:
   - "--non-recursive"
 
 TERRAFORM_TFLINT_PRE_COMMANDS:
+  - command: "git config --global url."https://oauth2:${{ secrets.GITHUB_TOKEN }}@github.com".insteadOf https://github.com"
   - command: "terraform init"
 
 TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES:
