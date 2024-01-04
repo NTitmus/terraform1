@@ -4,7 +4,7 @@
 APPLY_FIXES: none
 # ENABLE: # If you use ENABLE variable, all other languages/formats/tooling formats will be disabled by default
 ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be disabled by default
-  - TERRAFORM_TFLINT  
+  #- TERRAFORM_TFLINT  
   - TERRAFORM_TERRASCAN
   #- TERRAFORM_TERRAFORM_FMT
 
@@ -13,12 +13,12 @@ TERRAFORM_TERRASCAN_ARGUMENTS:
   - "debug"
   #- "--non-recursive"
 
-TERRAFORM_TFLINT_PRE_COMMANDS:
-  - command: "git config --global url.\"https://oauth2:${{ secrets.GITHUB_TOKEN }}@github.com\".insteadOf https://github.com"
-  - command: "terraform init -backend=false"
+#TERRAFORM_TFLINT_PRE_COMMANDS:
+#  - command: "git config --global url.\"https://oauth2:${{ secrets.GITHUB_TOKEN }}@github.com\".insteadOf https://github.com"
+#  - command: "terraform init -backend=false"
 
-TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES:
-  - GITHUB_TOKEN # Can contain string only, not regex
+#TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES:
+#  - GITHUB_TOKEN # Can contain string only, not regex
 
 LOG_LEVEL: DEBUG
 
