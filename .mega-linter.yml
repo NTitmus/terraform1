@@ -17,8 +17,8 @@ TERRAFORM_TERRASCAN_ARGUMENTS:
 #  - command: "git config --global url.\"https://oauth2:${{ secrets.GITHUB_TOKEN }}@github.com\".insteadOf https://github.com"
 #  - command: "terraform init -backend=false"
 
-TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES:
-  - GITHUB_TOKEN # Can contain string only, not regex
+#TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES:
+#  - GITHUB_TOKEN # Can contain string only, not regex
 
 LOG_LEVEL: DEBUG
 
