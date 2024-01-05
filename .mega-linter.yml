@@ -5,9 +5,9 @@ APPLY_FIXES: none
 # ENABLE: # If you use ENABLE variable, all other languages/formats/tooling formats will be disabled by default
 ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be disabled by default
   #- TERRAFORM_TFLINT  
-  #- TERRAFORM_TERRASCAN
+  - TERRAFORM_TERRASCAN
   #- TERRAFORM_TERRAFORM_FMT
-  - REPOSITORY_CHECKOV
+  #- REPOSITORY_CHECKOV
 
 TERRAFORM_TERRASCAN_ARGUMENTS:
   - "-l"
