@@ -1,2 +1,2 @@
 framework: terraform
-download-external-modules: true
+download-external-modules: false
