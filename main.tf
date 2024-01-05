@@ -28,8 +28,8 @@ provider "aws" {
 
 module "ec2_instance" {
   #source = "github.com/NTitmus/terrascan2?ref=v1.0.0"
-  #source = "github.com/NTitmus/terrascan2?ref=37a00bfdba334800392cbb304c418a1027a5b649"
-  source = "git@github.com:NTitmus/terrascan2?ref=v1.0.0.git"
+  source = "github.com/NTitmus/terrascan2?ref=37a00bfdba334800392cbb304c418a1027a5b649"
+  #source = "git@github.com:NTitmus/terrascan2?ref=v1.0.0.git"
 }
 
 #resource "aws_instance" "simple" {
