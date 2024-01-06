@@ -31,7 +31,7 @@ TERRAFORM_TERRASCAN_PRE_COMMANDS:
 TERRAFORM_TERRASCAN_POST_COMMANDS:
   - command: "pwd"
 
-TERRAFORM_TERRASCAN_CLI_EXECUTABLE: "terrascan scan -d ./to_scan -i terraform -t aws -v -l debug"
+TERRAFORM_TERRASCAN_CLI_EXECUTABLE: "terrascan scan -d to_scan -i terraform -t aws -v -l debug"
 
 LOG_LEVEL: DEBUG
 
