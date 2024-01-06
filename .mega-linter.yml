@@ -26,7 +26,7 @@ ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be 
 TERRAFORM_TERRASCAN_PRE_COMMANDS:
   - command: "mkdir to_scan"
   - command: "ls"
-  - command: "cp ./inc_file.tf ./to_scan"
+  - command: "mv ./inc_file.tf ./to_scan"
 
 #TERRAFORM_TERRASCAN_POST_COMMANDS:
 #  - command: "pwd"
