@@ -31,7 +31,8 @@ TERRAFORM_TERRASCAN_PRE_COMMANDS:
 #TERRAFORM_TERRASCAN_POST_COMMANDS:
 #  - command: "pwd"
 
-TERRAFORM_TERRASCAN_CLI_EXECUTABLE: ['terrascan', 'scan', '-t', 'aws', '-l', 'debug', '-i', 'terraform', '-d', 'to_scan']
+TERRAFORM_TERRASCAN_CLI_EXECUTABLE: "terrascan scan -t aws -l debug"
+#['terrascan', 'scan', '-t', 'aws', '-l', 'debug', '-i', 'terraform', '-d', 'to_scan']
 
 LOG_LEVEL: DEBUG
 
