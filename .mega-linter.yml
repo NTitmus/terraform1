@@ -9,9 +9,9 @@ ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be 
   #- TERRAFORM_TERRAFORM_FMT
   #- REPOSITORY_CHECKOV
 
-TERRAFORM_TERRASCAN_ARGUMENTS:
-  - "-l"
-  - "debug"
+#TERRAFORM_TERRASCAN_ARGUMENTS:
+#  - "-l"
+#  - "debug"
   #- "--non-recursive"
 
 #TERRAFORM_TFLINT_PRE_COMMANDS:
