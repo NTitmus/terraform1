@@ -26,8 +26,7 @@ TERRAFORM_TERRASCAN_FILE_NAMES_REGEX: ["inc_"]
 TERRAFORM_TERRASCAN_PRE_COMMANDS:
   - command: "mkdir to_scan"
   - command: "ls"
-  - command: "cp ../inc_file.tf ."
-    cwd: "/github/workspace/to_scan"
+  - command: "cp ./inc_file.tf ./to_scan"
 
 TERRAFORM_TERRASCAN_POST_COMMANDS:
   - command: "pwd"
