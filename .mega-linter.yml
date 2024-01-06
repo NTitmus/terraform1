@@ -31,7 +31,7 @@ ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be 
 #TERRAFORM_TERRASCAN_POST_COMMANDS:
 #  - command: "pwd"
 
-TERRAFORM_TERRASCAN_CLI_EXECUTABLE: ['terrascan', 'scan', '-t', 'aws']
+TERRAFORM_TERRASCAN_CLI_EXECUTABLE: ['terrascan', 'scan', '-t', 'aws', '-l', '-debug', '-i', 'terraform', '-d', '.']
 
 LOG_LEVEL: DEBUG
 
