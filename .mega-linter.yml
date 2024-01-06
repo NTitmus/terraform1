@@ -25,6 +25,7 @@ TERRAFORM_TERRASCAN_FILE_NAMES_REGEX: ["inc_"]
 #MEGALINTER_FILES_TO_LINT: ["inc_file.tf"]
 TERRAFORM_TERRASCAN_PRE_COMMANDS:
   - command: "mkdir to_scan"
+  - command: "ls"
   - command: "cp ../inc_file.tf ."
     cwd: "/github/workspace/to_scan"
 
