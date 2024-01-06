@@ -43,6 +43,7 @@ TERRAFORM_TERRASCAN_CLI_EXECUTABLE:
   - 'terraform'
   - '-l'
   - 'debug'
+  - '--non-recursive'
 #['terrascan', 'scan', '-t', 'aws', '-l', 'debug', '-i', 'terraform', '-d', 'to_scan']
 
 LOG_LEVEL: DEBUG
