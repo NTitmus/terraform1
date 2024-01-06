@@ -33,7 +33,6 @@ TERRAFORM_TERRASCAN_PRE_COMMANDS:
 
 #TERRAFORM_TERRASCAN_CLI_EXECUTABLE: "terrascan scan -t aws -l debug"
 TERRAFORM_TERRASCAN_CLI_EXECUTABLE: 
-  - 'terrascan'
   - 'scan'
   - '-d'
   - 'to_scan'
