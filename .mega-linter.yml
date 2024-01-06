@@ -25,8 +25,11 @@ TERRAFORM_TERRASCAN_FILE_NAMES_REGEX: ["inc_"]
 #MEGALINTER_FILES_TO_LINT: ["inc_file.tf"]
 TERRAFORM_TERRASCAN_PRE_COMMANDS:
   - command: "mkdir to_scan"
-  - command: "cd to_scan"
   - command: "cp ../inc_file.tf ."
+    cwd: "/github/workspace/to_scan"
+
+TERRAFORM_TERRASCAN_POST_COMMANDS:
+  - command: "pwd"
 
 TERRAFORM_TERRASCAN_CLI_EXECUTABLE: "terrascan scan -d ./to_scan -i terraform -t aws -v -l debug"
 
