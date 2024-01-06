@@ -35,8 +35,12 @@ TERRAFORM_TERRASCAN_PRE_COMMANDS:
 TERRAFORM_TERRASCAN_CLI_EXECUTABLE: 
   - 'terrascan'
   - 'scan'
+  - '-d'
+  - 'to_scan'
   - '-t'
   - 'aws'
+  - '-i'
+  - 'terraform'
   - '-l'
   - 'debug'
 #['terrascan', 'scan', '-t', 'aws', '-l', 'debug', '-i', 'terraform', '-d', 'to_scan']
