@@ -28,5 +28,7 @@ TERRAFORM_TERRASCAN_PRE_COMMANDS:
   - command: "cd to_scan"
   - command: "cp ../inc_file.tf ."
 
+TERRAFORM_TERRASCAN_CLI_EXECUTABLE: "terrascan scan -d ./to_scan -i terraform -t aws -v -l debug"
+
 LOG_LEVEL: DEBUG
 
